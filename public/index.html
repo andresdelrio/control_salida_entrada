@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="/favicon.jpg"/>
+    <style>
+        /* Aquí puedes agregar tus estilos CSS */
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Estudiantes por fuera del colegio: <span id="cantidad_estudiantes"></span></h1>
+
+    <div class="container">
+        
+        <table id="tabla-estudiantes" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Grupo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se insertarán las filas de la tabla desde JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid" id="div-form">
+        <form id="registro-form">
+            <label for="documento">Documento:</label>
+            <input type="number" id="documento" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
